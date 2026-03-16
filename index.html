@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My To-Do List</title>
-    <link rel="stylesheet" href="do.css">
+    <title>Store Text Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #container {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #333;
+            min-height: 50px;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>My To-Do List </h2>
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button onclick="storeText()">Add</button>
 
-    <div class="input1">
-        <input type="text" id="task" placeholder="Enter a task">
-        <button id="addTask">Add</button>
-    </div>
+    <div id="container"></div>
 
-    <button id="deleteAll">Delete All</button>
-
-    <ul id="taskList"></ul>
-</div>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="list.js"></script>
+    <!-- Link external JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
